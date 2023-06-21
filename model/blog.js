@@ -13,7 +13,7 @@ const BlogSchema = new Schema({
   },
   tag:{
     type:String,
-    enum:['general','health','tech','sports','gaming'],
+    enum:['general','health','tech','sports','gaming','movie'],
     default:'general'
   },
   image:{
@@ -22,7 +22,7 @@ const BlogSchema = new Schema({
   createdBy:{
     type:mongoose.Types.ObjectId,
     ref:'User',
-    required:[true,'please provide a User'],
+    // required:[true,'please provide a User'],
 }
 },{timestamps:true});
 

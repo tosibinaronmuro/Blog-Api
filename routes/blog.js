@@ -5,10 +5,12 @@ const authenticationMiddleware=require('../middleware/auth')
 
 
 router.route('/').get(getAllBlogs)
-router.route('/').post(authenticationMiddleware, createBlog)
-router.route('/myBlogs').get(authenticationMiddleware, getMyBlogs)
+router.route('/').post( createBlog)//authenticationMiddleware,
+router.route('/myBlogs').get( getMyBlogs)
+// router.route('/myBlogs').get(authenticationMiddleware, getMyBlogs)
 router.route('/:id').get(getSingleBlog)
-router.route('/:id').patch(authenticationMiddleware, UpdateBlog).delete(authenticationMiddleware, deleteBlog)
+router.route('/:id').patch(UpdateBlog).delete(deleteBlog)
+// router.route('/:id').patch(authenticationMiddleware, UpdateBlog).delete(authenticationMiddleware, deleteBlog)
 
 
 module.exports=router
