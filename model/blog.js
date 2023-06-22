@@ -22,7 +22,7 @@ const BlogSchema = new Schema({
   createdBy:{
     type:mongoose.Types.ObjectId,
     ref:'User',
-    // required:[true,'please provide a User'],
+    required:[true,'please provide a User'],
 }
 },{timestamps:true});
 
