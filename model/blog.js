@@ -9,7 +9,7 @@ const BlogSchema = new Schema({
   },
   content:{
     type:String,
-    required:[true, "please provide a title"]
+    required:[true, "please provide content"]
   },
   tag:{
     type:String,

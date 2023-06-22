@@ -13,4 +13,4 @@ router.route('/:id').get(getSingleBlog)
 router.route('/:id').patch(authMiddleware, UpdateBlog).delete(authMiddleware, deleteBlog)
 
 
-module.exports=router
+module.exports=router 
