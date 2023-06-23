@@ -11,17 +11,17 @@ const mongoSanitize = require('express-mongo-sanitize');
 app.use(cookieParser(process.env.JWT_SECRET));
 const AuthRouter = require("./routes/auth");
 const BlogRouter = require("./routes/blog");
+const docxRouter = require("./routes/docx");
 const notFoundHandler = require("./middleware/not-found");
 const errorHandler = require("./middleware/errors-handler");
 const connectDB = require("./connect/connectdb");
+const documentation=require('./utils/helper')
 
 app.use(express.json());
 // routes
 app.use("/api/v1/auth", AuthRouter);
 app.use("/api/v1/blogs", BlogRouter);
-app.get("/", (req, res) => {
-  res.send(`Blogging haven`);
-});
+app.use("",docxRouter)
 // middlewares
 app.set('trust proxy', 1);
 app.use(

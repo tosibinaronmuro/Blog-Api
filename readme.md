@@ -69,4 +69,4 @@ Schema:{ }
 Response: deletes the Blog 
 route requires authorization
 
-Note:* means required, ***meanscreated by mongoose
+Note:* means required, ***means created by mongoose
