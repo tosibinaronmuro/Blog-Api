@@ -71,4 +71,4 @@ Note: * indicates a required field, and *** indicates created by Mongoose.
 
 ## Contact
 
-For any further inquiries or information, please contact the project owner at [email@example.com](mailto:tosironj@gmail.com).
+For any further inquiries or information, please contact the project owner at [tosironj@gmail.com](mailto:tosironj@gmail.com).
