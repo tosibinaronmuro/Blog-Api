@@ -1,10 +1,10 @@
-# Blog App
+# Blogging Haven
 
-This is the repository for the Blog App, built using Node.js, Express.js, and Mongoose. The app provides functionalities for user authentication, creating, reading, updating, and deleting blog posts.
+This is the repository for the Blogging Haven API, built using Node.js, Express.js, and Mongoose. The app provides functionalities for user authentication, creating, reading, updating, and deleting blog posts.
 
 ## Installation
 
-To get started with the Blog App, follow the instructions below:
+To get started with the Blogging Haven API, follow the instructions below:
 
 1. Clone the repository: `git clone https://github.com/tosibinaronmuro/Blog-Api.git`
 2. Navigate to the project directory: `cd Blog-Api`
